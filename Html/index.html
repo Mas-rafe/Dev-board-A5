@@ -8,40 +8,40 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class=" min-h-screen p-4 bg-blue-200">
-  <header class=" bg-[#FFFFFF] w-3/4 rounded-lg mt-4 p-4 mx-auto  items-center">
-    <nav class="flex justify-around gap-12 items-center">
-        <div  class="flex items-center gap-2">
+  <header class=" bg-[#FFFFFF]  rounded-2xl mt-4 p-4 mx-72 items-center">
+    <nav class="flex justify-between gap-60 items-center">
+        <div  class=" flex items-center gap-2">
             <img class="w-12" src="/assets/logo.png" alt="">
             <h3 class="text-3xl">Dev<span class="font-bold">Board</span></h3>
         </div>
-      <div class="flex gap-8">
+      <div class="flex  gap-8">
         <div class="bg-slate-300 flex border-2 h-12 w-24 justify-center items-center gap-1 rounded-3xl">
             <img class="w-6 h-6 mt-1" src="/assets/checkbox.png" alt="">
-            <h4 class="text-3xl font-bold">23</h4>
+            <h4 class="text-3xl font-bold"><span id="task-1">24</span></h4>
           </div>
           <img src="/assets/theme-btn.png" alt="">
       </div>
     </nav>
   </header>
   <main class="flex w-9/12 gap-4 p-8 mx-auto">
-<section class="  bg-[#FFFFFF] rounded-xl  p-4 ">
-    <div class="flex gap-3">
-        <div class="flex items-center gap-3 border-2 rounded-xl p-4 bg-slate-200">
-            <div class="border-2 w-12 bg-slate-100 h-12 p-3 rounded-full" >
+<section class="  bg-[#FFFFFF]  rounded-2xl  p-4 ">
+    <div class="flex mx-4 gap-3">
+        <div class="flex w-52 items-center gap-3 border-2 rounded-xl p-4 bg-slate-200">
+            <div class="border-2  bg-slate-100 h-12 p-3 rounded-full" >
                 <img class="w-6 h-6 mb-2" src="/assets/checkbox.png" alt="">
             </div>
             <div>
                 <p class="text-base text-gray-600">Task Assigned</p>
-            <h3 class="text-2xl font-bold">05</h3>
+            <h3  class="text-2xl font-bold"><span id="task-2" >05</span></h3>
             </div>
         </div>
        
-        <div class="flex items-center rounded-xl bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] p-4">
+        <div id="btn-discover" class="flex w-2/4 items-center rounded-xl bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] p-4">
             <img class="w-16 h-16" src="/assets/board.png" alt="">
-            <p class="text-lg text-white">Discover Something New Today!</p>
+            <p class=" text-lg text-white">Discover Something New Today!</p>
         </div>
         
-        <div class=" flex items-center gap-3 border-2 rounded-xl p-4 bg-slate-200">
+        <div class=" flex w-52 items-center gap-3 border-2 rounded-xl p-4 bg-slate-200">
             <div class="border-2 w-12 bg-slate-100 h-12 p-3 rounded-full" >
                 <img class="w-6 h-6 mb-2" src="/assets/calender.png" alt="">
             </div>
@@ -50,11 +50,10 @@
             <h3 class="text-2xl font-bold">05</h3>
             </div>
         </div>
-
     </div>
-      <div class="grid grid-cols-3 p-3 mr-10 gap-8">
-            <div class=" border-2 rounded-xl  mx-auto p-3 bg-[#B8C0F4]  ">
-                <div class=" border-2  bg-white w-24 rounded-lg  p-3 ">
+  <div class="grid grid-cols-3 p-3 mr-10 gap-10 mt-2 mx-1">
+            <div id="card" class=" border-2 rounded-xl  mx-auto p-3 bg-[#B8C0F4]  ">
+                <div class=" border-2  bg-white w-24 rounded-lg  p-2 ">
                 <h3 class="text-base">ShopEase</h3>
                 </div>
                <h2 class="w-64 text-xl my-2 font-bold">Fix Mobile Button Issue</h2>
@@ -66,15 +65,15 @@
                     <h5 class="text-sm text-gray-600">Deadline</h5>
                     <h3 class="text-base font-bold text-[#00303C] w-32">21 march 2025</h3>
                 </div>
-                <button class="btn btn-primary  ">Completed</button>
+                <button id="btn-1" class="btn btn-primary  ">Completed</button>
                </div>
           </div>
 
           <div class=" border-2 rounded-xl  mx-auto p-3 bg-[#B8C0F4]   ">
-            <div class=" border-2  bg-white w-24 rounded-lg  p-3 ">
-            <h3 class="text-base">ShopEase</h3>
+            <div class=" border-2  bg-white w-24 rounded-lg  p-2 ">
+            <h3 class="text-base">CloudSync</h3>
             </div>
-           <h2 class="w-64 text-xl my-2 font-bold">Fix Mobile Button Issue</h2>
+           <h2 class="w-64 text-xl my-2 font-bold">Add Dark Mode</h2>
            <div class="p-3 border-2 bg-white w-64 text-gray-500 rounded-lg">
            <p class="text-base">Debug using Chrome DevTools, check for overlapping elements</p>
         </div>
@@ -83,15 +82,15 @@
                 <h5 class="text-sm text-gray-600">Deadline</h5>
                 <h3 class="text-base font-bold text-[#00303C] w-32">21 march 2025</h3>
             </div>
-            <button class="btn btn-primary  ">Completed</button>
+            <button id="btn-2" class="btn btn-primary  ">Completed</button>
            </div>
       </div>
 
       <div class=" border-2 rounded-xl  mx-auto p-3 bg-[#B8C0F4]   ">
-        <div class=" border-2  bg-white w-24 rounded-lg  p-3 ">
-        <h3 class="text-base">ShopEase</h3>
+        <div class=" border-2  bg-white w-24 rounded-lg  p-2 ">
+        <h3 class="text-base">SwiftPay</h3>
         </div>
-       <h2 class="w-64 text-xl my-2 font-bold">Fix Mobile Button Issue</h2>
+       <h2 class="w-64 text-xl my-2 font-bold">Optimize Home Page</h2>
        <div class="p-3 border-2 bg-white w-64 text-gray-500 rounded-lg">
        <p class="text-base">Debug using Chrome DevTools, check for overlapping elements</p>
     </div>
@@ -105,10 +104,10 @@
   </div>
 
   <div class=" border-2 rounded-xl  mx-auto p-3 bg-[#B8C0F4]   ">
-    <div class=" border-2  bg-white w-24 rounded-lg  p-3 ">
-    <h3 class="text-base">ShopEase</h3>
+    <div class=" border-2  bg-white w-14 rounded-lg  p-2 ">
+    <h3 class="text-base">Meta</h3>
     </div>
-   <h2 class="w-64 text-xl my-2 font-bold">Fix Mobile Button Issue</h2>
+   <h2 class="w-64 text-xl my-2 font-bold">Add New Emoji </h2>
    <div class="p-3 border-2 bg-white w-64 text-gray-500 rounded-lg">
    <p class="text-base">Debug using Chrome DevTools, check for overlapping elements</p>
 </div>
@@ -122,10 +121,10 @@
 </div>
 
 <div class=" border-2 rounded-xl  mx-auto p-3 bg-[#B8C0F4]  ">
-    <div class=" border-2  bg-white w-24 rounded-lg  p-3 ">
-    <h3 class="text-base">ShopEase</h3>
+    <div class=" border-2 bg-white w-24 rounded-lg  p-2 ">
+    <h3 class="text-base w-60 ">Google LLC</h3>
     </div>
-   <h2 class="w-64 text-xl my-2 font-bold">Fix Mobile Button Issue</h2>
+   <h2 class="w-64 text-xl my-2 font-bold">Integrate OpenAI API</h2>
    <div class="p-3 border-2 bg-white w-64 text-gray-500 rounded-lg">
    <p class="text-base">Debug using Chrome DevTools, check for overlapping elements</p>
 </div>
@@ -139,10 +138,10 @@
 </div>
 
 <div class=" border-2 rounded-xl  mx-auto p-3 bg-[#B8C0F4]   ">
-    <div class=" border-2  bg-white w-24 rounded-lg  p-3 ">
-    <h3 class="text-base">ShopEase</h3>
+    <div class=" border-2  bg-white w-24 rounded-lg  p-2 ">
+    <h3 class="text-base">Glassdoar</h3>
     </div>
-   <h2 class="w-64 text-xl my-2 font-bold">Fix Mobile Button Issue</h2>
+   <h2 class="w-64 text-xl my-2 font-bold">Improve Job Searching</h2>
    <div class="p-3 border-2 bg-white w-64 text-gray-500 rounded-lg">
    <p class="text-base">Debug using Chrome DevTools, check for overlapping elements</p>
 </div>
@@ -157,18 +156,17 @@
  </div>
  </section>
 <section class="border-2 w-1/3 bg-[#FFFFFF] rounded-xl p-4 items-center text-center justify-centers">
-    <div class="flex gap-3">
+    <div class="flex mt-2 items-center justify-center gap-3">
         <img src="/assets/activity.png" alt="">
-        <h4>Activity Log</h4>
+        <h4 class="text-xl font-bold text-[#00303C]">Activity Log</h4>
     </div>
-    <button class="btn btn-primary">Clear History</button>
+    <button class="btn btn-primary mt-2">Clear History</button>
 </section>
 
-    <div class="flex gap-3">
-        <img src="/assets/activity.png" alt="">
-        <h4>Activity Log</h4>
-    </div>
-    <button class="btn btn-primary">Clear History</button>
+   
 </main>
+
+<script src="javaScript/column1.js"></script>
+<script src="javaScript/parse.js"></script>
 </body>
 </html>
