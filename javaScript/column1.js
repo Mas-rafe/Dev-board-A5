@@ -10,6 +10,10 @@ document.getElementById("btn-discover").addEventListener('click',function(event)
 for(let i = 1; i<= 6;i++)
 document.getElementById(`btn-${i}`).addEventListener('click',function(event){
     event.preventDefault();
+    let button = document.getElementById(`btn-${i}`);
+    if(button){
+        this.disabled = true;
+    }
     console.log(i)
     alert("Board updated successfuly");
     const newTask = getInnerTextById("task-1");
@@ -20,7 +24,7 @@ document.getElementById(`btn-${i}`).addEventListener('click',function(event){
     document.getElementById("task-2").innerText = sum;
     const description = document.getElementById("description");
     const desc1 = document.createElement('p');
-    desc1.innerText ='you have complete the task at';
+    desc1.innerText =`you have complete the task at${new Date().toLocaleTimeString()}`
     desc1.style.border = "2px solid"
     desc1.style.borderRadius = "10px"
     desc1.style.textAlign = "center"
@@ -30,5 +34,10 @@ document.getElementById(`btn-${i}`).addEventListener('click',function(event){
     description.append(desc1);
     console.log(desc1)  
 })
-    
-  
+
+document.getElementById("btn-clear").addEventListener('click',function(event){
+    event.preventDefault();
+    document.getElementById("description").style.display="none"
+
+})
+
