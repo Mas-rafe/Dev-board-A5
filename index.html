@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class=" min-h-screen p-4 bg-blue-200">
+<body class=" lg:min-h-screen p-4 bg-blue-200">
   <header class=" bg-[#FFFFFF]  rounded-2xl mt-4 p-4 mx-72 items-center">
     <nav class="flex justify-between gap-60 items-center">
         <div  class=" flex items-center gap-2">
@@ -23,9 +23,9 @@
       </div>
     </nav>
   </header>
-  <main class="flex w-9/12 gap-4 p-8 mx-auto">
+  <main class=" lg:flex  w-9/12 gap-4 p-8 mx-auto">
 <section class="  bg-[#FFFFFF]  rounded-2xl  p-4 ">
-    <div class="flex mx-4 gap-3">
+    <div class=" grid grid-cols-1 lg:flex mx-4 gap-3">
         <div class="flex w-52 items-center gap-3 border-2 rounded-xl p-4 bg-slate-200">
             <div class="border-2  bg-slate-100 h-12 p-3 rounded-full" >
                 <img class="w-6 h-6 mb-2" src="assets/checkbox.png" alt="">
@@ -51,7 +51,7 @@
             </div>
         </div>
     </div>
-  <div class="grid grid-cols-3 p-3 mr-10 gap-10 mt-2 mx-1">
+  <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-3 mr-10 gap-6 md:gap-16 lg:gap-6  mt-2 mx-1">
             <div id="card" class=" border-2 rounded-xl  mx-auto p-3 bg-[#B8C0F4]  ">
                 <div class=" border-2  bg-white w-24 rounded-lg  p-2 ">
                 <h3 class="text-base">ShopEase</h3>
@@ -170,7 +170,7 @@
    
 </main>
 
-<script src="javaScript/column1.js"></script>
+<script src="javaScript/toggle.js"></script>
 <script src="javaScript/parse.js"></script>
 </body>
 </html>
